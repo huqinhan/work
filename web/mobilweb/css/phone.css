@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+html{height:100%;}
+
+.downBody{height:100%; overflow:hidden;font-size:62.5%;}
+
+.topBox{width:100%;height:50px; background:#000; position:absolute;top:0px;left:0px; z-index:10;opacity:0.2;
+    filter:alpha(opacity=20);}
+.top{width:100%;height:50px;position:absolute;top:0px;left:0px; z-index:100;}
+.topLogo{width:120px;height:50px; float:left; padding-left:50px;line-height:50px;font-size:2em; font-weight:normal; color:#fff; position:relative;}
+.topLogo img{height:32px;position:absolute;left:10px; top:9px;}
+
+.topNav{float:right;display:inline-block;text-align:right; line-height:50px;color:#f3f3f3;font-size:1.2em; padding-right:6px;}
+.topNav a{font-size:1.2em;margin:0px .5em; color:#f3f3f3;}
+
+.pageBox{width:100%;height:100%;position:absolute;z-index:0;}
+.pageBox h2{font-size:3em;color:#fff; margin-bottom:.2em;text-align:center;}
+.pageBox h3{font-size:1.3em;font-weight:normal;color:#eee; margin-bottom:1em;text-align:center;}
+.pageBox h4{font-size:2.2em;font-weight:normal;color:#eee; margin-bottom:.5em;text-align:center;}
+.pageBox a.pageBtn{margin-right:10px; padding:.5em 1em; display:inline-block; border-radius:6px;color:#fff;font-size:1.5em;}
+
+.pageCon{position:relative;height:100%; }
+.pageCon .img_1{width:100%;position:absolute;top:0;left:0;z-index:6;}
+.pageCon .img_1 img{width:100%;}
+
+.conRed{ background:#ee603b;}
+.conRed a.pageBtn{float:right;border:1px solid #ff9377; background:#f57352;}
+.phoneBg{width:55%;margin:0px auto; position:relative;}
+.phoneBg1{width:100%;text-align:center;}
+.phoneBg1 img{width:100%;max-width:330px;}
+.phoneImg{position:absolute;left:16px;top:40px;;}
+.phoneImgBox{position:relative; overflow:hidden;}
+.phoneImgBox img{position:absolute;top:0px;left:0px;}
+
+.conBlue{background:#5eabd2;}
+.conBlue a.pageBtn{border:1px solid #6ac5ef;background:#4dadd9;font-size:.7em;}
+
+.conPurple{ background: #d04d97;}
+.conPurple a.pageBtn{ border:1px solid #f06db7;  background:#e056a4;}
+
+.conGreen{background:#20bbb4;}
+.conGreen a.pageBtn{border:1px solid #2adbd3;background:#24c9c2;}
+
+.conOrange{background:#de6e2a;}
+.conOrange a.pageBtn{border:1px solid #f78f4f;background:#e67530;}
+
+.zeroBg{width:366px;height:366px;border-radius:220px;position:absolute;top:350px;left:250px;z-index:0;background:#fff;opacity:0;
+    filter:alpha(opacity=0);}
+
+.pageShow{position:absolute;top:40%;right:2%;z-index:10000;}
+.pageShow li{width:6px;height:6px;margin-bottom:6px; border:1px solid #fff; border-radius:10px;cursor:pointer;opacity:0.4;
+    filter:alpha(opacity=40);}
+.pageShow .active{background-color:#fff;}
+
+.page-current{z-index:1;}
+
+.foot{position:absolute;bottom:10px; font-size:1em; width:100%;line-height:24px;color:#000; text-align:center;opacity:0.3;
+    filter:alpha(opacity=30);z-index:100;}
+
+
+/*关于我们*/
+.aboutBg{background-color:#ee603b; padding-top:60px;font-size:62.5%;}
+.aboutCon{width:96%; margin:0px auto; position:relative; padding-top:48px;}
+.aboutConL{width:100%;z-index:100;position:absolute;height:48px;top:1px;}
+.aboutConL a{display:inline-block;border:1px solid #e95e3a; font-size:1.3em; padding:0px .5em; background-color:#f18062;color:#fff;margin-right: .2em; height:46px; line-height:46px;}
+.aboutConL a.ahove{border:1px solid #d95633;color:#722916; background-color:#ffded6;border-bottom:1px solid #ffded6;}
+
+.aboutConR{border:1px solid #d95633;color:#722916; background-color:#ffded6; padding:1.5em 1em; font-size:1.2em;line-height:1.5em; margin-bottom:.5em;}
+.aboutConR h1{font-size:1.5em; padding-bottom:.5em;border-bottom:1px solid #e5c7c0;margin-bottom:.5em; text-align:center;}
+.aboutConR .aboutText{padding:.2em .5em;}
+.borderB{ border-bottom:1px solid #ddd}
+
+.hided{ opacity:0;}
+.showed{opacity:1}

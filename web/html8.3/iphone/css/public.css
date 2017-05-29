@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*通用样式*/
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,input,textarea,th,tr,td,em {margin:0px;padding:0px; vertical-align:baseline;}
+address,caption,cite,code,dfn,th,var,b,i,em {font-style:normal;font-weight:normal;}
+li,ol,ul {list-style:none;}
+fieldset,img {border:0;}
+html,body{height:100%}
+
+.clear{*zoom:1}
+.clear:after {visibility: hidden;clear: both; height: 0; line-height: 0;font-size:0;content: ".";display: block; }
+.clearfix {visibility:hidden; clear:both;height:0; line-height:0;font-size:0;}
+
+form {display: block;margin-top: 0em;}
+body{font-size:12px;font-family:"微软雅黑"; color:#666;}
+
+
+/*网站通用样式*/
+a {color: #666;text-decoration:none;}
+a:hover { text-decoration: none; color: #C00}
+
+a.red{ color:#C00}
+a.blue{ color: #09F}
+a.blue2{ color: #075576}
+
+/*通用样式*/
+.fl{ float:left;}
+.fr{ float:right;}
+
+.c3{ color:#333;}
+.c9{ color:#999;}
+.c8{ color:#888;}
+.c6{ color: #666;}
+.c690{ color: #690;}
+.cc30{ color: #c30;}
+.c1a{ color: #1A79B3;}
+.cf{ color: #fff;}
+.green{ color: #4ECFB3;}
+
+
+.tc{ text-align:center;}
+.tr{ text-align:right;}
+.tl{ text-align:left;}
+
+.pl1em{ padding-left:1em;}
+.pl2em{ padding-left:2em;}
+
+.pl10{ padding-left:10px;}
+
+.mauto{ margin:0px auto;}
+.mb20{ margin-bottom:20px;}
+.mb10{ margin-bottom:10px;}
+.mb1em{ margin-bottom:1em;}
+.mr10{ margin-right:10px;}
+.ml10{ margin-left:10px;}
+.mt10{ margin-top:-10px;}
+.mb2em{ margin-bottom:2em;}
+.mb3em{ margin-bottom:3em;}
+.mb50{ margin-bottom:50px;}
+.mb60{ margin-bottom:60px;}
+.mb80{ margin-bottom:80px;}
+.mt20{ margin-top:20px;}
+
+
+.bold{ font-weight:bold;}
+.f140{ font-size:140px;}
+.f48{ font-size:48px;}
+.f4em{ font-size:4em;}
+.f3em{ font-size:3em;}
+.f2em{ font-size:2em;}
+.f22{ font-size:22px;}
+.f20{ font-size:20px;}
+.f18{ font-size:18px;}
+.f1em{ font-size:1em;}
+.line20{line-height:20px;}
+.line24{line-height:24px;}
+.line32{line-height:32px;}
+.line36{line-height:36px;}
+.line48{line-height:48px;}
+.aril{ font-family:Arial;}
+.yahei{ font-family:"微软雅黑";}
+
+.nomal{ font-weight:normal}
+
+.h20{ height:50px;}
+
+.left480{left:475px;}
+
+.hide{ opacity:0;}
+.show{opacity:1}
+.relative{position:relative;}
+.inline{ display:inline;}
+.inline-block{display:inline-block;}
+.block{ display:block;}
+.none{ display:none;}
+
+.pt180{ padding-top:180px;}

@@ -1,0 +1,720 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*头部icon-bg*/
+.btn-icon{
+	padding-left:32px;
+	position:relative;
+	height:32px;
+	line-height:32px;
+	display:inline-block;
+}
+.btn-icon::before{
+	content:"";
+	background-image: url(/images/taoyao/iconx2.png?1);
+	background-repeat:no-repeat;
+	background-size:600px auto;
+	width:32px;
+	height:32px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+.btn-icon-right{
+	padding-right:32px;
+	text-align:right;
+}
+.btn-icon-right::before{
+	right:0;
+	left:auto;
+}
+
+.btn-icon-back::before{
+	background-position:0px 0px;
+}
+.btn-icon-posit::before{
+	background-position: -32px 0px;
+}
+.btn-icon-user::before{
+	background-position: -64px 0px;
+}
+.btn-icon-search::before{
+	background-position: -96px 0px;
+}
+.btn-icon-share::before{
+	background-position: -128px 0px;
+}
+.btn-icon-r,
+.btn-icon-l{
+	position:absolute;
+	z-index:1000000
+}
+.btn-icon-r::before{
+	background-position:-160px 0px;
+}
+.btn-icon-l::before{
+	background-position:-192px 0px;
+}
+.btn-icon-message::before{
+	background-position: -224px 0px;
+}
+.btn-icon-set::before{
+	background-position: -256px 0px;
+}
+.btn-icon-more::before{
+	background-position: -288px 0px;
+}
+
+
+/*上下图标*/
+.icon-128,
+.icon-64,
+.icon-48,
+.icon-32,
+.icon-24,
+.icon-16{
+	text-align:center;
+	display:inline-block;
+	position:relative;
+}
+.icon-128::before,
+.icon-64::before,
+.icon-48::before,
+.icon-32::before,
+.icon-24::before,
+.icon-16::before,
+.icon-16::after{
+	content:"";
+	display:block;
+	margin:5px auto;
+	margin-bottom:0;
+	background-image:url(/images/taoyao/iconx2.png?1);
+	background-repeat:no-repeat;
+	background-size:600px auto;
+}
+
+.icon-128::before{
+	width:128px;
+	height:128px;
+}
+.icon-128-sh::before{
+	background-position: 0px -344px;
+	margin:0 auto;
+}
+.icon-128-nofile::before{
+	background-position: -128px -344px;
+	margin:0 auto;
+}
+
+/*--------64px*64px-----------*/
+
+.icon-64::before{
+	width:64px;
+	height:64px;
+}
+.icon-64:hover{
+	color:#eee;
+}
+.icon-64-sys::before{
+	background-position: 0px -32px;
+}
+.icon-64-hj::before{
+	background-position: -64px -32px;
+}
+
+.icon-64-posit::before{
+	background-position: -128px -32px;
+}
+.icon-64-ok::before{
+	background-position: 0px -224px;
+	margin:0 auto;
+}
+.icon-64-erro::before{
+	background-position: -64px -224px;
+	margin:0 auto;
+}
+.icon-64-suc{
+    padding:15px 20px;
+    background-color:rgba(0,0,0,.8);
+    border-radius:6px;
+}
+.icon-64-suc::before{
+    background-position: -192px -224px;
+    margin:0 auto;
+}
+.icon-64-add{
+	padding:15px;
+	background-color:#ddd;
+	border-radius:6px;
+	display:inline-block;
+}
+.icon-64-add:hover{
+	background-color:#ccc ;
+}
+.icon-64-add::before{
+	background-position: -192px -32px;
+	margin:0 auto;
+}
+
+.icon-64-qdz{
+    text-align:center;
+    color:#666;
+    font-size:16px;
+}
+.icon-64-qdz::before{
+    background-position: -192px -288px;
+    margin:0 auto;
+}
+.icon-64-shz{
+    display:block;
+
+    margin:30px auto;
+    margin-bottom:40px;
+}
+.icon-64-shz::before{
+    background-position: -320px -224px;
+    margin:0 auto;
+}
+
+/*--------48px*48px-----------*/
+
+.icon-48 {
+	color:#333;
+}
+.icon-48::before{
+	width:48px;
+	height:48px;
+	border-radius:50%;
+	margin-bottom:5px;
+}
+.icon-48-yz::before{
+	background-position: 0px -96px;
+	/*background-color: #39C;*/
+}
+.icon-48-qb::before{
+	background-position: -48px -96px;
+/*background-color: #f60;*/
+}
+.icon-48-yxq::before{
+background-position: -96px -96px;
+/*background-color: #65ACBE;*/
+}
+.icon-48-ys::before{
+background-position: -144px -96px;
+/*background-color: #C882C6;*/
+}
+.icon-48-cz::before{
+background-position: -192px -96px;
+/*background-color: #EC8F33*/
+}
+.icon-48-hd::before{
+background-position: -240px -96px;
+/*background-color: #C69;*/
+}
+.icon-48-ghjq::before{
+background-position: -288px -96px;
+/*background-color: #89969A*/
+}
+.icon-48-hybd::before{
+background-position: -336px -96px;
+/*background-color: #AC86A5*/
+}
+.icon-48-smsj::before{
+background-position: -384px -96px;
+/*background-color: #81B172*/
+}
+.icon-48-jzxj::before{
+background-position: -432px -96px;
+/*background-color: #CC8668*/
+}
+.icon-48-fjwb::before{
+background-position: -480px -96px;
+/*background-color: #6086BF*/
+}
+.icon-48-xfjl::before{
+background-position: -528px -96px;
+/*background-color: #CC9E53*/
+}
+.icon-48-mfdh::before{
+background-position: -528px -48px;
+/*background-color: #57A6CC*/
+}
+.icon-48-wdzh::before{
+background-position: -480px -48px;
+/*background-color: #5AB6AA;*/
+}
+
+.icon-48-baobiao::before{
+    background-position: -480px 0px;
+}
+.icon-48-zd::before{
+    background-position: -336px -48px;
+}
+.icon-48-qd::before{
+    background-position: -384px -48px;
+}
+
+/*--------32px*32px-----------*/
+
+.icon-32{
+	color:#666;
+	font-size:12px;
+}
+.icon-32::before{
+	width:32px;
+	height:32px;
+}
+.icon-32-ys::before{
+	background-position: 0px -144px;
+}
+.icon-32-ys-hover::before{
+	background-position: 0px -176px;
+}
+.icon-32-yz::before{
+	background-position: -32px -144px;
+}
+.icon-32-yz-hover::before{
+	background-position: -32px -176px;
+}
+.icon-32-yxq::before{
+	background-position: -64px -144px;
+}
+.icon-32-yxq-hover::before{
+	background-position: -64px -176px;
+}
+.icon-32-wd::before{
+	background-position: -96px -144px;
+}
+.icon-32-wd-hover::before{
+	background-position: -96px -176px;
+}
+.icon-32-home::before{
+	background-position: -192px -144px;
+}
+.icon-32-home-hover::before{
+	background-position: -192px -176px;
+}
+.icon-32-gz::before{
+	background-position: -128px -144px;
+	margin-top:0;
+}
+.icon-32-dh::before{
+	background-position: -160px -144px;
+	margin-top:0;
+}
+.icon-32-phone::before{
+	background-position: -224px -144px;
+	margin-top:0;
+}
+.icon-32-right{
+	text-align:left;
+	color:#fff;
+    padding-right:36px;
+}
+.icon-32-right::before{
+	background-position: -256px -144px;
+	margin-top:0px;
+	position:absolute;
+	right:5px;
+	top:50%;
+}
+.icon-32-close{
+	position:fixed;
+}
+.icon-32-close::before{
+	background-position: 0px -288px;
+	margin-top:0px;
+}
+.icon-32-delete{
+    position:absolute;
+}
+.icon-32-delete::before{
+    background-position: -64px -288px;
+    margin-top:0px;
+}
+.icon-32-noselect::before{
+    background-position: -128px -288px;
+    margin-top:0px;
+}
+.icon-32-select::before{
+    background-position: -96px -288px;
+    margin-top:0px;
+}
+.icon-32-pyq,
+.icon-32-qq,
+.icon-32-wb,
+.icon-32-wx,
+.icon-32-link,
+.icon-32-del,
+.icon-32-jb,
+.icon-32-back{
+	border-radius:4px;
+	background-color:#fff;
+	padding:15px;
+}
+.icon-32-pyq::before{
+	background-position: -288px -144px;
+}
+.icon-32-qq::before{
+	background-position: -320px -144px;
+}
+.icon-32-wb::before{
+	background-position: -352px -144px;
+}
+.icon-32-wx::before{
+	background-position: -384px -144px;
+}
+.icon-32-link::before{
+	background-position: -416px -144px;
+}
+.icon-32-del::before{
+	background-position: -448px -144px;
+}
+.icon-32-jb::before{
+	background-position: -480px -144px;
+}
+.icon-32-back::before{
+	background-position: -192px -144px;
+}
+
+/*--------24px*24px-----------*/
+
+.icon-24{
+	color:#666;
+	font-size:16px;
+	padding-left:44px;
+}
+.icon-24::before{
+	width:24px;
+	height:24px;
+	position:absolute;
+	left:10px;
+	top:0px;
+	margin-top:0px;
+	border-radius:3px;
+}
+.icon-24-dd::before{
+	background-position: -24px -320px;
+	background-color: #09C;
+}
+.icon-24-qb::before{
+	background-position: 0px -320px;
+	background-color:#C30;
+}
+.icon-24-yz::before{
+	background-position: -48px -320px;
+	background-color: #55B5B0;
+}
+.icon-24-zhbd::before{
+	background-position: -120px -320px;
+	background-color: #D5A84A;
+}
+.icon-24-ys::before{
+	background-position: -72px -320px;
+	background-color: #AE5B9D;
+}
+.icon-24-wb::before{
+	background-position: -96px -320px;
+	background-color: #96B046;
+}
+.icon-24-ye::before{
+	background-position: -264px -320px;
+}
+.icon-24-jf::before{
+	background-position: -288px -320px;
+}
+.icon-24-yhj::before{
+	background-position: -312px -320px;
+}
+.icon-24-nssr::before{
+	background-position: -336px -320px;
+}
+.icon-24-xfjl::before{
+	background-position: -360px -320px;
+}
+.icon-24-grzl::before{
+	background-position: -384px -320px;
+}
+.icon-24-zhaq::before{
+	background-position: -408px -320px;
+}
+.icon-24-smrz::before{
+	background-position: -432px -320px;
+}
+.icon-24-gyty::before{
+	background-position: -456px -320px;
+}
+.icon-24-yjbz::before{
+	background-position: -480px -320px;
+}
+
+.icon-24-qd,
+.icon-24-ks,
+.icon-24-fk,
+.icon-24-pj,
+.icon-24-ss,
+.icon-24-xz{
+	padding:0;
+	font-size:14px;
+}
+.icon-24-qd em,
+.icon-24-ks em,
+.icon-24-fk em,
+.icon-24-pj em,
+.icon-24-ss em,
+.icon-24-xz em{
+	border-radius:10px;
+	background-color:#d30;
+	color:#fff;
+	font-size:10px;
+	padding:2px 4px;
+	line-height:10px;
+	position:absolute;
+	top:-6px;
+	left:18px;
+}
+.icon-24-qd::before,
+.icon-24-ks::before,
+.icon-24-fk::before,
+.icon-24-pj::before,
+.icon-24-ss::before,
+.icon-24-xz::before{
+	display:block;
+	position:inherit;
+	margin:0px auto;
+	left:0;
+}
+.icon-24-ks::before{
+	background-position: -144px -320px;
+}
+.icon-24-fk::before{
+	background-position: -168px -320px;
+}
+.icon-24-pj::before{
+	background-position: -192px -320px;
+}
+.icon-24-ss::before{
+	background-position: -216px -320px;
+}
+.icon-24-qd::before{
+	background-position: -240px -320px;
+}
+.icon-24-xz::before{
+	background-position: -504px -320px;
+}
+.icon-24-gz,
+.icon-24-xh,
+.icon-24-ok{
+	padding:5px 8px;
+	border:1px solid #ddd;
+	background-color:#f9f9f9;
+	border-radius:4px;
+}
+.icon-24-gz::before,
+.icon-24-xh::before,
+.icon-24-ok::before{
+	position:inherit;
+	left:0;
+}
+.icon-24-gz::before{
+	background-position: -528px -320px;
+}
+.icon-24-xh::before{
+	background-position: -552px -320px;
+}
+.icon-24-ok::before{
+	background-position: -576px -320px;
+}
+
+
+/*--------16px*16px-----------*/
+/*.icon-16{
+	dispaly:inline-block;
+	text-align:left;
+	clear:both;
+}
+.icon-16::before{
+	width:16px;
+	height:16px;
+	line-height:16px;
+	display:inline-block;
+	margin:0px 2px 0 0;
+	float:left;
+}
+.icon-16-man,
+.icon-16-woman{
+	color:#fff;
+	border-radius:16px;
+	padding:0px 5px 0px 3px;
+	font-size:11px;
+}*/
+.icon-16{
+	height:16px;
+	text-align:left;
+	clear:both;
+	line-height:1.4;
+	font-size:12px;
+    padding-left:20px;
+    position:relative;
+}
+.icon-16::before{
+	width:16px;
+	height:16px;
+	margin:0px 2px 0 0;
+    display:inline-block;
+    position:absolute;
+    left:2px;
+    top:0;
+}
+.icon-16-man,
+.icon-16-woman{
+	color:#fff;
+	border-radius:16px;
+	padding:0px 5px 0px 3px;
+    padding-left:18px;
+}
+.icon-16-man{
+	background-color: #09C;
+}
+.icon-16-woman{
+	background-color: #D273C5;
+}
+.icon-16-man::before{
+	background-position: 0px -208px;
+}
+.icon-16-woman::before{
+	background-position: -16px -208px;
+}
+.icon-16-shen::before{
+	background-position: -32px -208px;
+	background-color: #09C;
+	border-radius:4px;
+}
+.icon-16-hot,
+.icon-16-hot-no,
+.icon-16-like{
+	color:#999;
+}
+.icon-16-hot::before{
+	background-position: -48px -208px;
+	background-color: #d40;
+	border-radius:3px;
+}
+.icon-16-hot-no::before{
+    background-position: -48px -208px;
+    background-color: #bbb;
+    border-radius:3px;
+}
+.icon-16-like::before{
+	background-position: -64px -208px;
+}
+.icon-16-down:before,
+.icon-16-up:before{
+	width:0px;
+}
+.icon-16-down:after,
+.icon-16-up:after{
+	width:16px;
+	height:16px;
+	display:inline-block;
+	margin:4px 0 0 2px;
+	float:right;
+	background-position: -80px -208px;
+}
+.icon-16-up:after{
+	background-position: -240px -208px;
+}
+.icon-16-yes,
+.icon-16-no{
+	font-size:14px;
+	padding:6px 0;
+}
+.icon-16-yes{
+	color:#d40;
+}
+.icon-16-yes::before{
+	background-position: -112px -208px;
+}
+.icon-16-no::before{
+	background-position: -128px -208px;
+}
+.icon-16-pay::before{
+	background-position: -144px -208px;
+}
+.icon-16-pl::before{
+	background-position: -160px -208px;
+}
+.icon-16-zan::before{
+	background-position: -176px -208px;
+}
+.icon-16-ok::before{
+    background-position: -256px -208px;
+}
+.icon-16-error::before{
+    background-position: -272px -208px;
+}
+.icon-16-posit::before{
+	background-position: -192px -208px;
+}
+/*评价五星*/
+.icon-pj {
+	display:inline-block;
+	margin-bottom:-1px;
+	margin-left:5px;
+	margin-right:5px;
+}
+.icon-pj em{
+	display:inline-block;
+	width:12px;
+	height:12px;
+	background:url(/images/taoyao/iconfont-favorfill.png);
+	background-size:12px 12px;
+	background-repeat:no-repeat;
+	float:left;
+	margin-right:1px;
+}
+.icon-pj em.icon-pj-hs{
+	background:url(/images/taoyao/iconfont-favorfill1.png);
+	background-size:12px 12px;
+}
+.icon-pj em.icon-pj-bhs{
+	background:url(/images/taoyao/iconfont-favorfill2.png);
+	background-size:12px 12px;
+}
+
+.icon-pj-16 em{
+	width:16px;
+	height:16px;
+	background-size:16px 16px;
+	margin-right:3px;
+}
+.icon-pj-16 em.icon-pj-hs{
+	background-size:16px 16px;
+}
+.icon-pj-16 em.icon-pj-bhs{
+	background:url(/images/taoyao/iconfont-favorfill2.png);
+	background-size:16px 16px;
+}
+
+.icon-pj-20 em{
+	width:20px;
+	height:20px;
+	background-size:20px 20px;
+	margin-right:5px;
+	margin-bottom:2px;
+	line-height:20px;
+}
+.icon-pj-20 em.icon-pj-hs{
+	background-size:20px 20px;
+}
+
+.icon-pj-20 em.icon-pj-bhs{
+	background:url(/images/taoyao/iconfont-favorfill2.png);
+	background-size:20px 20px;
+}
+
+
+.icon-inline::before{
+	dispaly:inline-block;
+	float:left;
+}

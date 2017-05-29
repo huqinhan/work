@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="18523670-2a11-4e75-9cc5-e5c9a1824195" name="web" url="http://a.taofairy.com">
+        <fileTransfer host="a.taofairy.com" port="21" password="dfc2dfd0dfd0dfd2df9bdf9bdf98df98df99df99dfcbdfcb" username="www">
+          <advancedOptions>
+            <advancedOptions compatibilityMode="true" dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

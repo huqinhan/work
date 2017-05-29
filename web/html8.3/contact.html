@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>聚来电-关于我们</title>
+<meta name="keywords" content="聚来电,手机抢礼,看电视抢礼,明星稀缺,明星同款,点投科技,融媒体,互联网+,互联网+电视,多屏互动,互动电视">
+<meta content="点投科技致力于媒体、互联网+电视融合的软件研发。公司产品“聚来电”为电视台提供电视+移动端+互联网多屏互动的解决方案，为品牌商提供小额商品赞助互动广告服务，为用户提供多屏互动的收视体验，产品已获得了浙江地区多家电视台的认可，并开始实质性合作。" name="description">
+<meta name="robots" content="index,about">
+<meta name="author" content="聚来电">
+<meta name="copyright" content="Copyright 2015. www.deeptall.com . All Rights Reserved.">
+<link href="css/public.css" rel="stylesheet" type="text/css" />
+<link href="css/webpc.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/1.11.2/jquery.js"></script>
+<script type="text/javascript" src="js/webpc.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=K63Yqc7Fj0GrpZIsgHgT9iUI"></script>
+</head>
+
+<body class="aboutBg">
+<div class="top borderB">
+      <div class="conW clear">
+          <h1 class="topLogo"><a href="index.html"></a><span>首页</span></h1> 
+          <div class="topNav"><a href="index.html">下载</a>|<a href="about.html">关于</a></div>
+     </div>
+</div>
+<div class="about">
+    	<div class="aboutTit mb10"></div>
+        <div class="aboutCon">
+        	<div class="aboutConL">
+          	  <a href="about.html">公司简介</a>
+              <a href="">商务合作</a>
+              <a href="" class="ahove">联系我们</a>
+              <a href="">加入我们</a>
+            </div>
+            <div class="aboutConR">
+            	<h1>联系我们</h1>
+                <div class="aboutText">
+              	  <p><span class="bold">公司名称：</span>杭州点投科技有限公司</p>
+              	  <p><span class="bold">公司地址：</span>杭州市西湖区塘苗路18号华星现代产业园C座210</p>
+                  <p><span class="bold">联系电话：</span>0571-86693575</p>
+                  <p><span class="bold">联 系 人：</span>谢先生</p>
+                  <p><span class="bold">具体地理位置</span></p>
+                  <div style="width:600px;height:450px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="foot relative">点投科技版权所有Copyright © 2015-2018 Juled 浙ICP备15014086号</div>
+</body>
+</html>
+ <script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(120.128695,30.281443),19);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:"名称：杭州点投科技有限公司<br/>地址：杭州市西湖区塘苗路18号华星现代产业园C座210  <br/>电话：0571-86693575",title:"杭州点投科技有限公司",imageOffset: {width:0,height:-21},position:{lat:30.281529,lng:120.128462}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+  </script>

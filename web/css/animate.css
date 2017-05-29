@@ -1,0 +1,110 @@
+
+@keyframes myfirst
+{
+    0%    {top:-30px;}
+    100%  {top:0px}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+    0%    {top:-30px;}
+    100%  {top:0px}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+    0%    {top:-30px;}
+    100%  {top:0px}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+    0%    {top:-30px;}
+    100%  {top:0px}
+}
+
+@keyframes header_show
+{
+    0%    {opacity:0;}
+    100%  {opacity:1;}
+}
+@-moz-keyframes header_show
+{
+    0%    {opacity:0;}
+    100%  {opacity:1;}
+}
+@-webkit-keyframes header_show
+{
+    0%    {opacity:0;}
+    100%  {opacity:1;}
+}
+@-o-keyframes header_show
+{
+    0%    {opacity:0;}
+    100%  {opacity:1;}
+}
+
+@keyframes btnRotate{
+    from{transform:rotateZ(180deg)}
+    to{transform:rotateZ(0deg)}
+}
+@-webkit-keyframes btnRotate{
+    from{-webkit-transform:rotateZ(180deg)}
+    to{-webkit-transform:rotateZ(0deg)}
+}
+@-moz-keyframes btnRotate{
+    from{-moz-transform:rotateZ(180deg)}
+    to{-moz-transform:rotateZ(0deg)}
+}
+@-ms-keyframes btnRotate{
+    from{-ms-transform:rotateZ(180deg)}
+    to{-ms-transform:rotateZ(0deg)}
+}
+@-o-keyframes btnRotate{
+    from{-o-transform:rotateZ(180deg)}
+    to{-o-transform:rotateZ(0deg)}
+}
+
+/*图片滑动---向右滑出*/
+@keyframes moveLeftOut{
+    from{left:0%}
+    to{left:100%}
+}
+@-webkit-keyframes moveLeftOut{
+    from{left:0%}
+    to{left:100%}
+}
+@-moz-keyframes moveLeftOut{
+    from{left:0%}
+    to{left:100%}
+}
+@-ms-keyframes moveLeftOut{
+    from{left:0%}
+    to{left:100%}
+}
+@-o-keyframes moveLeftOut{
+    from{left:0%}
+    to{left:100%}
+}
+
+/*图片滑动---向右滑入*/
+@keyframes moveLeftIn{
+    from{left:-100%}
+    to{left:0%}
+}
+@-webkit-keyframes moveLeftIn{
+    from{left:-100%}
+    to{left:0%}
+}
+@-moz-keyframes moveLeftIn{
+    from{left:-100%}
+    to{left:0%}
+}
+@-ms-keyframes moveLeftIn{
+    from{left:-100%}
+    to{left:0%}
+}
+@-o-keyframes moveLeftIn{
+    from{left:-100%}
+    to{left:0%}
+}
